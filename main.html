@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Landing Page</title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+<header class="navbar">
+    <nav>
+        <div class="logo"><span>RESPONSIVE</span> Landing Page</div>
+        <ul class="nav-menu" id="menuList">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-icon">
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+        </div>
+    </nav>
+    
+</header>
+
+<section id="home" class="hero">
+    <div class="hero-content">
+        <h1>Welcome to Our Website</h1>
+        
+        <P>As we are passsinate Web Developer</P>
+        <p>Explore, learn, and grow with us!</p>
+    </div>
+</section>
+
+<section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We are dedicated to providing the best solutions for our clients in field of web application developement in various aspects.</p>
+</section>
+
+<section id="services" style="padding-top: 250px;background-color: rgb(206, 96, 96);">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+        <div class="service-item">
+            <h3>Web Development</h3>
+            <p>We build responsive, modern websites with excelent visual/graphical interface with more interactive </p>
+        </div>
+        <div class="service-item">
+            <h3>SEO Optimization</h3>
+            <p>For better website's visibility.</p>
+        </div>
+        <div class="service-item">
+            <h3>Consulting</h3>
+            <p>Expert advice for your business on various domains(free).</p>
+        </div>
+    </div>
+</section>
+<section id="contact" style="padding-top: 250px;">
+    <h2>Contact Us</h2>
+    <form class="contact-form">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+<script>
+    let menuList = document.getElementById("menuList")
+    menuList.style.maxHeight = "0px";
+
+    function toggleMenu(){
+        if(menuList.style.maxHeight == "0px")
+        {
+            menuList.style.maxHeight = "300px";
+        }
+        else{
+            menuList.style.maxHeight = "0px";
+        }
+    }
+    
+</script>
+<script src="https://kit.fontawesome.com/bdd4551caa.js" crossorigin="anonymous"></script>
+<footer>
+    <p>© 2025 MyWebsite. All Rights Reserved.</p>
+</footer>
+</body>
+</html>
